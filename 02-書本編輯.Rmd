@@ -10,7 +10,9 @@ bookdown::preview_chapter("01-intro.rmd", output_format="bookdown::gitbook")
 
 注意換行要在結束句輸入「兩」個空格，才換行。不然就要按兩次enter鍵。  
 一個空格只是單純的空格，「兩」個空格才會有新的意義，如換行或內縮（在列點時用）。  
+
 ### 有趣的互動應用
+Shiny app example:
 ```{r include=TRUE}
 knitr::include_app("https://yihui.shinyapps.io/miniUI/", 
   height = "600px")
