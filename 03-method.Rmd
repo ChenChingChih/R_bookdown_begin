@@ -1,6 +1,6 @@
 # 發布電子書至網路
 
-## 發佈到GitHub上  
+## 發佈到GitHub上{-}  
 
 ### 告知GitHub此電子書並非Jekyll所生成
 建立`.nojekyl`(會出現在與bookdown-demo .R porject的資料夾)，
@@ -10,5 +10,6 @@ file.create('.nojekyll')
 再將_bookdown.yml新增`output_dir: "docs"`，接著執行一次Build Book，匯出的內容就會在docs子資料夾中，再將剛剛產生的`.nojekyl`放到docs子資料夾中。
 
 ### GitHub設定
-在Setting -> Options -> GitHub Pages -> Source 改成 "master branch /docs folder"
+在Setting -> Options -> GitHub Pages -> Source 改成 "master branch /docs folder"。  
+變更後在Setting -> Options -> GitHub Pages就會出現 Your site is ready to be published at "你的電子書網址"。
 
