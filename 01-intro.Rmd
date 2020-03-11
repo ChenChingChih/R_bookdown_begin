@@ -9,7 +9,7 @@ install.packages("bookdown")
 # devtools::install_github("rstudio/bookdown")
 ```
 
-2.下載書的草稿[Github](https://github.com/rstudio/bookdown-demo)。   
+2.下載書的草稿[Github](https://github.com/rstudio/bookdown-demo)/[中文模板](https://github.com/yihui/bookdown-chinese)。   
 3.打開`bookdown-demo`資料夾，點選`bookdown-demo.Rproj`。     
 4.點開`index.Rmd` 再點選Rstudio右上角`Build`分頁裡面的 `Build Book`，便會看到書的草稿。  
 
