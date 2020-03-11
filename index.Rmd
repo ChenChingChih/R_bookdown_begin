@@ -1,0 +1,46 @@
+--- 
+title: "R bookdown 新手村"
+author: "Chen, Ching-Chih"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# 前言
+## 安裝bookdown的動機
+bookdown兼具word寫作時的自然，與latex排版上的優美，但少了latex在排版上的繁瑣設定，此外bookdown的輸出格式也可自行設定，有word, pdf, html可做選擇。  
+## 預先安裝的套件
+1.安裝rmarkdown  
+```{r 簡介1,eval=FALSE, include=TRUE}
+# Install from CRAN
+install.packages('rmarkdown')
+
+# Or if you want to test the development version,
+# install from GitHub
+if (!requireNamespace("devtools"))
+  install.packages('devtools')
+devtools::install_github('rstudio/rmarkdown')
+```
+2.安裝輕量版latex, [tinytex](https://yihui.name/tinytex/)(給沒裝過latex的人使用)  
+[Windows系统可能需要五分鐘左右（其間可能會彈出兩次錯誤訊息，點確認即可；如果防毒軟體彈出警告，請允許修改）。](https://yihui.org/tinytex/cn/)
+```{r eval=FALSE}
+install.packages("tinytex")
+tinytex::install_tinytex()  # install TinyTeX
+```
+
+
+
+
+```{r include=FALSE}
+#生成.bib參考資料檔
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
