@@ -132,8 +132,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 前言</a><ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#安裝bookdown的動機"><i class="fa fa-check"></i><b>1.1</b> 安裝bookdown的動機</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#學習bookdown的動機"><i class="fa fa-check"></i><b>1.1</b> 學習bookdown的動機</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#預先安裝的套件"><i class="fa fa-check"></i><b>1.2</b> 預先安裝的套件</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#其他需要的帳號"><i class="fa fa-check"></i><b>1.3</b> 其他需要的帳號</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html"><i class="fa fa-check"></i><b>2</b> 建立自己的電子書</a><ul>
 <li class="chapter" data-level="2.1" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#生成電子書範例"><i class="fa fa-check"></i><b>2.1</b> 生成電子書範例</a></li>
@@ -141,7 +142,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="書本編輯.html"><a href="書本編輯.html"><i class="fa fa-check"></i><b>3</b> 書本編輯</a><ul>
 <li class="chapter" data-level="3.1" data-path="書本編輯.html"><a href="書本編輯.html#markdown-語法syntax"><i class="fa fa-check"></i><b>3.1</b> Markdown 語法(syntax)</a></li>
-<li class="chapter" data-level="3.2" data-path="書本編輯.html"><a href="書本編輯.html#參考文獻引注"><i class="fa fa-check"></i><b>3.2</b> 參考文獻引注</a><ul>
+<li class="chapter" data-level="3.2" data-path="書本編輯.html"><a href="書本編輯.html#書本的排序"><i class="fa fa-check"></i><b>3.2</b> 書本的排序</a></li>
+<li class="chapter" data-level="3.3" data-path="書本編輯.html"><a href="書本編輯.html#參考文獻引注"><i class="fa fa-check"></i><b>3.3</b> 參考文獻引注</a><ul>
 <li class="chapter" data-level="" data-path="書本編輯.html"><a href="書本編輯.html#有趣的互動應用"><i class="fa fa-check"></i>有趣的互動應用</a></li>
 </ul></li>
 </ul></li>
@@ -184,12 +186,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">4.0.1</span> 告知GitHub此電子書並非Jekyll所生成</h3>
 <p><a href="https://bookdown.org/yihui/bookdown/github.html">建立</a><code>.nojekyl</code>(會出現在與bookdown-demo .R porject的資料夾)，</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">file.create</span>(<span class="st">&#39;.nojekyll&#39;</span>)</a></code></pre></div>
-<p>再將_bookdown.yml新增<code>output_dir: "docs"</code>，接著執行一次Build Book，匯出的內容就會在docs子資料夾中，再將剛剛產生的<code>.nojekyl</code>放到docs子資料夾中。</p>
+<p>再將<code>_bookdown.yml</code>新增<code>output_dir: "docs"</code>，接著執行一次Build Book，匯出的內容就會在docs子資料夾中，再將剛剛產生的<code>.nojekyl</code>放到docs子資料夾中。</p>
 </div>
 <div id="github設定" class="section level3">
 <h3><span class="header-section-number">4.0.2</span> GitHub設定</h3>
-<p>在Setting -&gt; Options -&gt; GitHub Pages -&gt; Source 改成 “master branch /docs folder”。<br />
-變更後在Setting -&gt; Options -&gt; GitHub Pages就會出現 Your site is ready to be published at “你的電子書網址”。</p>
+<p>在<code>Setting</code> -&gt; <code>Options</code> -&gt; <code>GitHub Pages</code> -&gt; <code>Source</code> 改成 “master branch /docs folder”。<br />
+變更後在<code>Setting</code> -&gt; <code>Options</code> -&gt; <code>GitHub Pages</code>就會出現 Your site is ready to be published at “你的電子書網址”。</p>
 
 </div>
 </div>
