@@ -135,7 +135,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#安裝bookdown的動機"><i class="fa fa-check"></i><b>1.1</b> 安裝bookdown的動機</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#預先安裝的套件"><i class="fa fa-check"></i><b>1.2</b> 預先安裝的套件</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html"><i class="fa fa-check"></i><b>2</b> 建立自己的電子書</a></li>
+<li class="chapter" data-level="2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html"><i class="fa fa-check"></i><b>2</b> 建立自己的電子書</a><ul>
+<li class="chapter" data-level="2.1" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#不可更改index.rmd"><i class="fa fa-check"></i><b>2.1</b> 不可更改<code class="unnumbered">index.Rmd</code></a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="書本編輯.html"><a href="書本編輯.html"><i class="fa fa-check"></i><b>3</b> 書本編輯</a><ul>
 <li class="chapter" data-level="" data-path="書本編輯.html"><a href="書本編輯.html#markdown-語法syntax"><i class="fa fa-check"></i>Markdown 語法(syntax)</a><ul>
 <li class="chapter" data-level="3.0.1" data-path="書本編輯.html"><a href="書本編輯.html#有趣的互動應用"><i class="fa fa-check"></i><b>3.0.1</b> 有趣的互動應用</a></li>
@@ -147,10 +149,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.0.2" data-path="發布電子書至網路.html"><a href="發布電子書至網路.html#github設定"><i class="fa fa-check"></i><b>4.0.2</b> GitHub設定</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
-</ul></li>
+<li class="chapter" data-level="5" data-path="使用狀況追蹤.html"><a href="使用狀況追蹤.html"><i class="fa fa-check"></i><b>5</b> 使用狀況追蹤</a></li>
 <li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -176,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="書本編輯" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> 書本編輯</h1>
 <p>跑出單一章節的方法:可以透過上方的Knit按鍵，或是用以下方法生成電子書(gitbook)</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">bookdown<span class="op">::</span><span class="kw">preview_chapter</span>(<span class="st">&quot;01-intro.rmd&quot;</span>, <span class="dt">output_format=</span><span class="st">&quot;bookdown::gitbook&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">bookdown<span class="op">::</span><span class="kw">preview_chapter</span>(<span class="st">&quot;01-intro.rmd&quot;</span>, <span class="dt">output_format=</span><span class="st">&quot;bookdown::gitbook&quot;</span>)</a></code></pre></div>
 <div id="markdown-語法syntax" class="section level2 unnumbered">
 <h2>Markdown 語法(syntax)</h2>
 <p>詳見<a href="https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html#e59fbae69cace8aa9ee6b395">林茂廷老師上課講義</a>、
@@ -186,8 +185,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="有趣的互動應用" class="section level3">
 <h3><span class="header-section-number">3.0.1</span> 有趣的互動應用</h3>
 <p>Shiny app example:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://yihui.shinyapps.io/miniUI/&quot;</span>, </a>
-<a class="sourceLine" id="cb3-2" title="2">  <span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://yihui.shinyapps.io/miniUI/&quot;</span>, </a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</a></code></pre></div>
 <iframe src="https://yihui.shinyapps.io/miniUI/?showcase=0" width="672" height="600px">
 </iframe>
 

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>R bookdown 新手村</title>
+  <title>Chapter 5 使用狀況追蹤 | R bookdown 新手村</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="R bookdown 新手村" />
+  <meta property="og:title" content="Chapter 5 使用狀況追蹤 | R bookdown 新手村" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="R bookdown 新手村" />
+  <meta name="twitter:title" content="Chapter 5 使用狀況追蹤 | R bookdown 新手村" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="建立自己的電子書.html"/>
+<link rel="prev" href="發布電子書至網路.html"/>
+<link rel="next" href="final-words.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -172,46 +172,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">R bookdown 新手村</h1>
-<p class="author"><em>Chen, Ching-Chih</em></p>
-<p class="date"><em>2020-03-11</em></p>
-</div>
-<div id="前言" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> 前言</h1>
-<div id="安裝bookdown的動機" class="section level2">
-<h2><span class="header-section-number">1.1</span> 安裝bookdown的動機</h2>
-<p>bookdown兼具word寫作時的自然，與latex排版上的優美，但少了latex在排版上的繁瑣設定，此外bookdown的輸出格式也可自行設定，有word, pdf, html可做選擇。<br />
-bookdown是透過markdown的方式進行電子書的寫作。<br />
-<a href="https://bookdown.org/tpemartin/rmarkdown_intro/#markdown">R Markdown 介紹</a></p>
-</div>
-<div id="預先安裝的套件" class="section level2">
-<h2><span class="header-section-number">1.2</span> 預先安裝的套件</h2>
-<p>1.安裝rmarkdown</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Install from CRAN</span></a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="kw">install.packages</span>(<span class="st">&#39;rmarkdown&#39;</span>)</a>
-<a class="sourceLine" id="cb1-3" title="3"></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="co"># Or if you want to test the development version,</span></a>
-<a class="sourceLine" id="cb1-5" title="5"><span class="co"># install from GitHub</span></a>
-<a class="sourceLine" id="cb1-6" title="6"><span class="cf">if</span> (<span class="op">!</span><span class="kw">requireNamespace</span>(<span class="st">&quot;devtools&quot;</span>))</a>
-<a class="sourceLine" id="cb1-7" title="7">  <span class="kw">install.packages</span>(<span class="st">&#39;devtools&#39;</span>)</a>
-<a class="sourceLine" id="cb1-8" title="8">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&#39;rstudio/rmarkdown&#39;</span>)</a></code></pre></div>
-<p>2.安裝輕量版latex, <a href="https://yihui.name/tinytex/">tinytex</a>(給沒裝過latex的人使用)<br />
-<a href="https://yihui.org/tinytex/cn/">Windows系统可能需要五分鐘左右（其間可能會彈出兩次錯誤訊息，點確認即可；如果防毒軟體彈出警告，請允許修改）。</a></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;tinytex&quot;</span>)</a>
-<a class="sourceLine" id="cb2-2" title="2">tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()  <span class="co"># install TinyTeX</span></a></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># the second argument can be a .bib file</span></a>
-<a class="sourceLine" id="cb3-2" title="2">knitr<span class="op">::</span><span class="kw">write_bib</span>(<span class="kw">c</span>(<span class="st">&quot;knitr&quot;</span>, <span class="st">&quot;stringr&quot;</span>), <span class="dt">file =</span> <span class="st">&quot;packages.bib&quot;</span>, <span class="dt">width =</span> <span class="dv">60</span>)</a></code></pre></div>
+<div id="使用狀況追蹤" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> 使用狀況追蹤</h1>
+<p>透過<a href="https://analytics.google.com/analytics/web/">Goolge Analytics</a>來追蹤書本的使用狀況，
+先申請Goolge Analytics的追蹤碼，
+再將<a href="https://benmarwick.github.io/bookdown-ort/mods.html?fbclid=IwAR00Y3A7JOY5eBsGk3IyCscTQhPNZXAIj3Et6o-zgSYXfU5Nns5Ag4L-Qc8">追蹤碼鑲嵌</a>至電子書中。<br />
+在<code>_output.yml</code>加入<code>includes: in_header: [ google_analytics.html]</code>，</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1">bookdown<span class="op">::</span>gitbook<span class="op">:</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="st">  </span>includes<span class="op">:</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="st">    </span>in_header<span class="op">:</span><span class="st"> </span>[ google_analytics.html]</a></code></pre></div>
+<p>接著新開一個google_analytics.html，將Goolge Analytics的代碼放到google_analytics.html裡。</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1"><span class="co">#這邊都不用</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="op">&lt;!--</span><span class="st"> </span>Global site <span class="kw">tag</span> (gtag.js) <span class="op">-</span><span class="st"> </span>Google Analytics <span class="op">-</span>-&gt;</a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="er">&lt;</span>script async src=<span class="st">&quot;https://www.googletagmanager.com/gtag/js?id=UA-159991960-1&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>script<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="co">#從這裡以下開始複製你的追蹤碼到google_analytics.html裡  </span></a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="er">&lt;</span>script<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb9-6" title="6">你的追蹤</a>
+<a class="sourceLine" id="cb9-7" title="7"><span class="op">&lt;</span><span class="er">/</span>script<span class="op">&gt;</span></a></code></pre></div>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="建立自己的電子書.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="發布電子書至網路.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -242,7 +228,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-application.Rmd",
 "text": "Edit"
 },
 "history": {

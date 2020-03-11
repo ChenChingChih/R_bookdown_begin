@@ -47,3 +47,10 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+```{r}
+# the second argument can be a .bib file
+knitr::write_bib(c("knitr", "stringr"), file = "packages.bib", width = 60)
+
+```
+
