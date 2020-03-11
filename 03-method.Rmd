@@ -1,7 +1,11 @@
 # 發布電子書
 
 ## 發佈到GitHub上  
-建立.nojekyl，再將_bookdown.yml裡的 子資料夾_book名稱改成docs
+
+### 告知GitHub此電子書並非Jekyll所生成
+建立`.nojekyl`(會出現在與bookdown-demo .R porject的資料夾)，
 ```{r eval=FALSE}
 file.create('.nojekyll')
 ```
+再將_bookdown.yml新增`output_dir: "docs"`，接著執行一次Build Book，匯出的內容就會在docs子資料夾中，再將剛剛產生的`.nojekyl`放到docs子資料夾中。
+

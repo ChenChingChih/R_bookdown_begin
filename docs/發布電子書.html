@@ -172,8 +172,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 4</span> 發布電子書</h1>
 <div id="發佈到github上" class="section level2">
 <h2><span class="header-section-number">4.1</span> 發佈到GitHub上</h2>
-<p>建立.nojekyl，再將_bookdown.yml裡的 子資料夾_book名稱改成docs</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">file.create</span>(<span class="st">&#39;.nojekyll&#39;</span>)</a></code></pre></div>
+<p>建立.nojekyl，</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">file.create</span>(<span class="st">&#39;.nojekyll&#39;</span>)</a></code></pre></div>
+<p>再將_bookdown.yml新增<code>output_dir: "docs"</code></p>
 
 </div>
 </div>
