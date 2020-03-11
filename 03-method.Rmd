@@ -1,3 +1,7 @@
-# Methods
+# 發布電子書
 
-We describe our methods in this chapter.
+## 發佈到GitHub上  
+建立.nojekyl，再將_bookdown.yml裡的 子資料夾_book名稱改成docs
+```{r eval=FALSE}
+file.create('.nojekyll')
+```

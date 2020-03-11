@@ -1,7 +1,4 @@
-# Introduction {#intro}
-
-## 建立自己的電子書{-}
-[R Markdown 介紹](https://bookdown.org/tpemartin/rmarkdown_intro/#markdown) 
+# 建立自己的電子書
 
 1. 先從github
 **bookdown** 套件可以從 CRAN上安裝:

@@ -14,10 +14,13 @@ description: "This is a minimal example of using the bookdown package to write a
 
 # 前言
 ## 安裝bookdown的動機
-bookdown兼具word寫作時的自然，與latex排版上的優美，但少了latex在排版上的繁瑣設定，此外bookdown的輸出格式也可自行設定，有word, pdf, html可做選擇。  
+bookdown兼具word寫作時的自然，與latex排版上的優美，但少了latex在排版上的繁瑣設定，此外bookdown的輸出格式也可自行設定，有word, pdf, html可做選擇。   
+bookdown是透過markdown的方式進行電子書的寫作。  
+[R Markdown 介紹](https://bookdown.org/tpemartin/rmarkdown_intro/#markdown)  
+
 ## 預先安裝的套件
 1.安裝rmarkdown  
-```{r 簡介1,eval=FALSE, include=TRUE}
+```{r eval=FALSE, include=TRUE}
 # Install from CRAN
 install.packages('rmarkdown')
 
