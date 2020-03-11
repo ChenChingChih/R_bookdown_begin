@@ -1,5 +1,6 @@
 # 使用狀況追蹤
 
+## 了解你的影響力{-}
 透過[Goolge Analytics](https://analytics.google.com/analytics/web/)來追蹤書本的使用狀況，
 先申請Goolge Analytics的追蹤碼，
 再將[追蹤碼鑲嵌](https://benmarwick.github.io/bookdown-ort/mods.html?fbclid=IwAR00Y3A7JOY5eBsGk3IyCscTQhPNZXAIj3Et6o-zgSYXfU5Nns5Ag4L-Qc8)至電子書中。  
