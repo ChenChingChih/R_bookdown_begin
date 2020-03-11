@@ -1,7 +1,25 @@
-# Applications
+# 使用狀況追蹤
 
-Some _significant_ applications are demonstrated in this chapter.
+透過[Goolge Analytics](https://analytics.google.com/analytics/web/)來追蹤書本的使用狀況，
+先申請Goolge Analytics的追蹤碼，
+再將追蹤碼鑲嵌至電子書中。  
+在`_output.yml`加入`includes: in_header: [ google_analytics.html]`，
+```{r eval=FALSE}
+bookdown::gitbook:
+  includes:
+    in_header: [ google_analytics.html]
+```
+接著新開一個google_analytics.html，將Goolge Analytics的代碼放到google_analytics.html裡。
+```{r eval=FALSE}
+#這邊都不用
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159991960-1"></script>
+#從這裡以下開始複製你的追蹤碼到google_analytics.html裡  
+<script>
+你的追蹤
+</script>
 
-## Example one
+```
 
-## Example two
+
+
