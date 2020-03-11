@@ -174,7 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="書本編輯" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> 書本編輯</h1>
 <p>跑出單一章節的方法:可以透過上方的Knit按鍵，或是用以下方法生成電子書(gitbook)</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">bookdown<span class="op">::</span><span class="kw">preview_chapter</span>(<span class="st">&quot;01-intro.rmd&quot;</span>, <span class="dt">output_format=</span><span class="st">&quot;bookdown::gitbook&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">bookdown<span class="op">::</span><span class="kw">preview_chapter</span>(<span class="st">&quot;01-intro.rmd&quot;</span>, <span class="dt">output_format=</span><span class="st">&quot;bookdown::gitbook&quot;</span>)</a></code></pre></div>
 <div id="markdown-語法syntax" class="section level2 unnumbered">
 <h2>Markdown 語法(syntax)</h2>
 <p>詳見<a href="https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html#e59fbae69cace8aa9ee6b395">林茂廷老師上課講義</a>、
@@ -182,8 +182,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>注意換行要在結束句輸入「兩」個空格，才換行。不然就要按兩次enter鍵。<br />
 一個空格只是單純的空格，「兩」個空格才會有新的意義，如換行或內縮（在列點時用）。<br />
 ### 有趣的互動應用</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://yihui.shinyapps.io/miniUI/&quot;</span>, </a>
-<a class="sourceLine" id="cb3-2" title="2">  <span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://yihui.shinyapps.io/miniUI/&quot;</span>, </a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</a></code></pre></div>
 <iframe src="https://yihui.shinyapps.io/miniUI/?showcase=0" width="672" height="600px">
 </iframe>
 
