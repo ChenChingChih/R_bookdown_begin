@@ -7,7 +7,7 @@ output: bookdown::gitbook
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
-link-citations: true
+link-citations: yes
 github-repo: rstudio/bookdown-demo
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
@@ -41,7 +41,6 @@ tinytex::install_tinytex()  # install TinyTeX
 
 
 ```{r include=FALSE}
-#生成.bib參考資料檔
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
@@ -49,4 +48,4 @@ knitr::write_bib(c(
 ```
 
 
-
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
