@@ -178,17 +178,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 先申請Goolge Analytics的追蹤碼，
 再將<a href="https://benmarwick.github.io/bookdown-ort/mods.html?fbclid=IwAR00Y3A7JOY5eBsGk3IyCscTQhPNZXAIj3Et6o-zgSYXfU5Nns5Ag4L-Qc8">追蹤碼鑲嵌</a>至電子書中。<br />
 在<code>_output.yml</code>加入<code>includes: in_header: [ google_analytics.html]</code>，</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1">bookdown<span class="op">::</span>gitbook<span class="op">:</span></a>
-<a class="sourceLine" id="cb8-2" title="2"><span class="st">  </span>includes<span class="op">:</span></a>
-<a class="sourceLine" id="cb8-3" title="3"><span class="st">    </span>in_header<span class="op">:</span><span class="st"> </span>[ google_analytics.html]</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1">bookdown<span class="op">::</span>gitbook<span class="op">:</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="st">  </span>includes<span class="op">:</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="st">    </span>in_header<span class="op">:</span><span class="st"> </span>[ google_analytics.html]</a></code></pre></div>
 <p>接著新開一個google_analytics.html，將Goolge Analytics的代碼放到google_analytics.html裡。</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1"><span class="co">#這邊都不用</span></a>
-<a class="sourceLine" id="cb9-2" title="2"><span class="op">&lt;!--</span><span class="st"> </span>Global site <span class="kw">tag</span> (gtag.js) <span class="op">-</span><span class="st"> </span>Google Analytics <span class="op">-</span>-&gt;</a>
-<a class="sourceLine" id="cb9-3" title="3"><span class="er">&lt;</span>script async src=<span class="st">&quot;https://www.googletagmanager.com/gtag/js?id=UA-159991960-1&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>script<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb9-4" title="4"><span class="co">#從這裡以下開始複製你的追蹤碼到google_analytics.html裡  </span></a>
-<a class="sourceLine" id="cb9-5" title="5"><span class="er">&lt;</span>script<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb9-6" title="6">你的追蹤</a>
-<a class="sourceLine" id="cb9-7" title="7"><span class="op">&lt;</span><span class="er">/</span>script<span class="op">&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="co">#這邊都不用</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="op">&lt;!--</span><span class="st"> </span>Global site <span class="kw">tag</span> (gtag.js) <span class="op">-</span><span class="st"> </span>Google Analytics <span class="op">-</span>-&gt;</a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="er">&lt;</span>script async src=<span class="st">&quot;https://www.googletagmanager.com/gtag/js?id=UA-159991960-1&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>script<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="co">#從這裡以下開始複製你的追蹤碼到google_analytics.html裡  </span></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="er">&lt;</span>script<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb8-6" title="6">你的追蹤</a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="op">&lt;</span><span class="er">/</span>script<span class="op">&gt;</span></a></code></pre></div>
 
 </div>
             </section>

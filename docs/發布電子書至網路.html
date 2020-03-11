@@ -179,7 +179,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="告知github此電子書並非jekyll所生成" class="section level3">
 <h3><span class="header-section-number">4.0.1</span> 告知GitHub此電子書並非Jekyll所生成</h3>
 <p>建立<code>.nojekyl</code>(會出現在與bookdown-demo .R porject的資料夾)，</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">file.create</span>(<span class="st">&#39;.nojekyll&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">file.create</span>(<span class="st">&#39;.nojekyll&#39;</span>)</a></code></pre></div>
 <p>再將_bookdown.yml新增<code>output_dir: "docs"</code>，接著執行一次Build Book，匯出的內容就會在docs子資料夾中，再將剛剛產生的<code>.nojekyl</code>放到docs子資料夾中。</p>
 </div>
 <div id="github設定" class="section level3">
