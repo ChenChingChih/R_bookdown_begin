@@ -3,7 +3,7 @@
 ## 發佈到GitHub上{-}  
 
 ### 告知GitHub此電子書並非Jekyll所生成
-建立`.nojekyl`(會出現在與bookdown-demo .R porject的資料夾)，
+[建立](https://bookdown.org/yihui/bookdown/github.html)`.nojekyl`(會出現在與bookdown-demo .R porject的資料夾)，
 ```{r eval=FALSE, include=TRUE}
 file.create('.nojekyll')
 ```

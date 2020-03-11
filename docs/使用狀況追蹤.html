@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="發布電子書至網路.html"/>
-<link rel="next" href="final-words.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -136,10 +136,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#預先安裝的套件"><i class="fa fa-check"></i><b>1.2</b> 預先安裝的套件</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html"><i class="fa fa-check"></i><b>2</b> 建立自己的電子書</a><ul>
-<li class="chapter" data-level="2.1" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#不可更改index.rmd"><i class="fa fa-check"></i><b>2.1</b> 不可更改<code class="unnumbered">index.Rmd</code></a></li>
+<li class="chapter" data-level="2.1" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#生成電子書範例"><i class="fa fa-check"></i><b>2.1</b> 生成電子書範例</a></li>
+<li class="chapter" data-level="2.2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#注意事項"><i class="fa fa-check"></i><b>2.2</b> 注意事項</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="書本編輯.html"><a href="書本編輯.html"><i class="fa fa-check"></i><b>3</b> 書本編輯</a><ul>
-<li class="chapter" data-level="" data-path="書本編輯.html"><a href="書本編輯.html#markdown-語法syntax"><i class="fa fa-check"></i>Markdown 語法(syntax)</a></li>
+<li class="chapter" data-level="3.1" data-path="書本編輯.html"><a href="書本編輯.html#markdown-語法syntax"><i class="fa fa-check"></i><b>3.1</b> Markdown 語法(syntax)</a></li>
+<li class="chapter" data-level="3.2" data-path="書本編輯.html"><a href="書本編輯.html#參考文獻引注"><i class="fa fa-check"></i><b>3.2</b> 參考文獻引注</a><ul>
+<li class="chapter" data-level="" data-path="書本編輯.html"><a href="書本編輯.html#有趣的互動應用"><i class="fa fa-check"></i>有趣的互動應用</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="發布電子書至網路.html"><a href="發布電子書至網路.html"><i class="fa fa-check"></i><b>4</b> 發布電子書至網路</a><ul>
 <li class="chapter" data-level="" data-path="發布電子書至網路.html"><a href="發布電子書至網路.html#發佈到github上"><i class="fa fa-check"></i>發佈到GitHub上</a><ul>
@@ -150,8 +154,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="使用狀況追蹤.html"><a href="使用狀況追蹤.html"><i class="fa fa-check"></i><b>5</b> 使用狀況追蹤</a><ul>
 <li class="chapter" data-level="" data-path="使用狀況追蹤.html"><a href="使用狀況追蹤.html#了解你的影響力"><i class="fa fa-check"></i>了解你的影響力</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -178,20 +182,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>了解你的影響力</h2>
 <p>透過<a href="https://analytics.google.com/analytics/web/">Goolge Analytics</a>來追蹤書本的使用狀況，
 先申請Goolge Analytics的追蹤碼，
-再將<a href="https://benmarwick.github.io/bookdown-ort/mods.html?fbclid=IwAR00Y3A7JOY5eBsGk3IyCscTQhPNZXAIj3Et6o-zgSYXfU5Nns5Ag4L-Qc8">追蹤碼鑲嵌</a>至電子書中。<br />
+再將<a href="https://benmarwick.github.io/bookdown-ort/mods.html?fbclid=IwAR00Y3A7JOY5eBsGk3IyCscTQhPNZXAIj3Et6o-zgSYXfU5Nns5Ag4L-Qc8">追蹤碼鑲嵌</a>至電子書中。<span class="citation">(Marwick <a href="#ref-Minimal" role="doc-biblioref">2016</a>)</span><br />
 在<code>_output.yml</code>加入<code>includes: in_header: [ google_analytics.html]</code>，</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1">bookdown<span class="op">::</span>gitbook<span class="op">:</span></a>
-<a class="sourceLine" id="cb10-2" title="2"><span class="st">  </span>includes<span class="op">:</span></a>
-<a class="sourceLine" id="cb10-3" title="3"><span class="st">    </span>in_header<span class="op">:</span><span class="st"> </span>[ google_analytics.html]</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1">bookdown<span class="op">::</span>gitbook<span class="op">:</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="st">  </span>includes<span class="op">:</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="st">    </span>in_header<span class="op">:</span><span class="st"> </span>[ google_analytics.html]</a></code></pre></div>
 <p>接著新開一個google_analytics.html，將Goolge Analytics的代碼放到google_analytics.html裡。</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1"><span class="co">#這邊都不用</span></a>
-<a class="sourceLine" id="cb11-2" title="2"><span class="op">&lt;!--</span><span class="st"> </span>Global site <span class="kw">tag</span> (gtag.js) <span class="op">-</span><span class="st"> </span>Google Analytics <span class="op">-</span>-&gt;</a>
-<a class="sourceLine" id="cb11-3" title="3"><span class="er">&lt;</span>script async src=<span class="st">&quot;https://www.googletagmanager.com/gtag/js?id=UA-159991960-1&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>script<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb11-4" title="4"><span class="co">#從這裡以下開始複製你的追蹤碼到google_analytics.html裡  </span></a>
-<a class="sourceLine" id="cb11-5" title="5"><span class="er">&lt;</span>script<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb11-6" title="6">你的追蹤</a>
-<a class="sourceLine" id="cb11-7" title="7"><span class="op">&lt;</span><span class="er">/</span>script<span class="op">&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1"><span class="co">#這邊都不用</span></a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="op">&lt;!--</span><span class="st"> </span>Global site <span class="kw">tag</span> (gtag.js) <span class="op">-</span><span class="st"> </span>Google Analytics <span class="op">-</span>-&gt;</a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="er">&lt;</span>script async src=<span class="st">&quot;https://www.googletagmanager.com/gtag/js?id=UA-159991960-1&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>script<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="co">#從這裡以下開始複製你的追蹤碼到google_analytics.html裡  </span></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="er">&lt;</span>script<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb12-6" title="6">你的追蹤</a>
+<a class="sourceLine" id="cb12-7" title="7"><span class="op">&lt;</span><span class="er">/</span>script<span class="op">&gt;</span></a></code></pre></div>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Minimal">
+<p>Marwick, Ben. 2016. <em>A Minimal Book Example</em>. <a href="https://benmarwick.github.io/bookdown-ort/mods.html">https://benmarwick.github.io/bookdown-ort/mods.html</a>.</p>
 </div>
 </div>
             </section>
@@ -200,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="發布電子書至網路.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

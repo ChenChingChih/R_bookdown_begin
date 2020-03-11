@@ -4,12 +4,16 @@
 ```{r 簡介1,eval=FALSE, include=TRUE}
 bookdown::preview_chapter("01-intro.rmd", output_format="bookdown::gitbook")
 ```
+
 ## Markdown 語法(syntax)
-詳見[林茂廷老師上課講義](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html#e59fbae69cace8aa9ee6b395)、
-[markdown_cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)、或是[bookdown電子書範例](https://bookdown.org/yihui/bookdown/markdown-syntax.html#inline-formatting)。  
+詳見[林茂廷老師上課講義](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html#e59fbae69cace8aa9ee6b395)[@R_Markdown_介紹]、
+[markdown_cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)、或是[bookdown電子書範例](https://bookdown.org/yihui/bookdown/markdown-syntax.html#inline-formatting)[@Authoring_Books]。  
 
 注意換行要在結束句輸入「兩」個空格，才換行。不然就要按兩次enter鍵。  
 一個空格只是單純的空格，「兩」個空格才會有新的意義，如換行或內縮（在列點時用）。  
+## 書本的排序
+最先讀取的檔案為`index.Rmd`(此為網頁讀取html檔的預設值)，再來以數字大小順序排列，範例中即以`01-intro.Rmd`,`02-literature.Rmd`...而以`_`開頭的檔案不會被編入電子書裡。  
+
 ## 參考文獻引注
 建立.bib檔，範例程式中已有`book.bib`(圖書),`packages.bib`(R套件)，可以自行做增刪。  
 在index.Rmd

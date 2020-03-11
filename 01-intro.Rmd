@@ -1,5 +1,5 @@
 # 建立自己的電子書
-
+## 生成電子書範例  
 1. 先從github
 **bookdown** 套件可以從 CRAN上安裝:
 
@@ -13,5 +13,6 @@ install.packages("bookdown")
 3.打開bookdown-demo資料夾，點選bookdown-demo.Rproj。     
 4.點開index.Rmd 再點選Rstudio右上角Build分頁裡面的 Build Book，便會看到書的草稿。  
 
-## 不可更改`index.Rmd`{-}
+## 注意事項  
+不可更改`index.Rmd`{-}
 因為後續生成的index.html是網頁讀取的首要項目!

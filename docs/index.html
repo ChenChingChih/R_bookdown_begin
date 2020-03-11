@@ -136,10 +136,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#預先安裝的套件"><i class="fa fa-check"></i><b>1.2</b> 預先安裝的套件</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html"><i class="fa fa-check"></i><b>2</b> 建立自己的電子書</a><ul>
-<li class="chapter" data-level="2.1" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#不可更改index.rmd"><i class="fa fa-check"></i><b>2.1</b> 不可更改<code class="unnumbered">index.Rmd</code></a></li>
+<li class="chapter" data-level="2.1" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#生成電子書範例"><i class="fa fa-check"></i><b>2.1</b> 生成電子書範例</a></li>
+<li class="chapter" data-level="2.2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#注意事項"><i class="fa fa-check"></i><b>2.2</b> 注意事項</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="書本編輯.html"><a href="書本編輯.html"><i class="fa fa-check"></i><b>3</b> 書本編輯</a><ul>
-<li class="chapter" data-level="" data-path="書本編輯.html"><a href="書本編輯.html#markdown-語法syntax"><i class="fa fa-check"></i>Markdown 語法(syntax)</a></li>
+<li class="chapter" data-level="3.1" data-path="書本編輯.html"><a href="書本編輯.html#markdown-語法syntax"><i class="fa fa-check"></i><b>3.1</b> Markdown 語法(syntax)</a></li>
+<li class="chapter" data-level="3.2" data-path="書本編輯.html"><a href="書本編輯.html#參考文獻引注"><i class="fa fa-check"></i><b>3.2</b> 參考文獻引注</a><ul>
+<li class="chapter" data-level="" data-path="書本編輯.html"><a href="書本編輯.html#有趣的互動應用"><i class="fa fa-check"></i>有趣的互動應用</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="發布電子書至網路.html"><a href="發布電子書至網路.html"><i class="fa fa-check"></i><b>4</b> 發布電子書至網路</a><ul>
 <li class="chapter" data-level="" data-path="發布電子書至網路.html"><a href="發布電子書至網路.html#發佈到github上"><i class="fa fa-check"></i>發佈到GitHub上</a><ul>
@@ -150,8 +154,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="使用狀況追蹤.html"><a href="使用狀況追蹤.html"><i class="fa fa-check"></i><b>5</b> 使用狀況追蹤</a><ul>
 <li class="chapter" data-level="" data-path="使用狀況追蹤.html"><a href="使用狀況追蹤.html#了解你的影響力"><i class="fa fa-check"></i>了解你的影響力</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -200,17 +204,7 @@ bookdown是透過markdown的方式進行電子書的寫作。<br />
 <a href="https://yihui.org/tinytex/cn/">Windows系统可能需要五分鐘左右（其間可能會彈出兩次錯誤訊息，點確認即可；如果防毒軟體彈出警告，請允許修改）。</a></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;tinytex&quot;</span>)</a>
 <a class="sourceLine" id="cb2-2" title="2">tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()  <span class="co"># install TinyTeX</span></a></code></pre></div>
-<p>You can write citations, too. For example, we are using the <strong>bookdown</strong> package <span class="citation">(Xie <a href="#ref-R-bookdown" role="doc-biblioref">2020</a>)</span> in this sample book, which was built on top of R Markdown and <strong>knitr</strong> <span class="citation">(Xie <a href="#ref-xie2015" role="doc-biblioref">2015</a>)</span>.</p>
 
-</div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-xie2015">
-<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/">http://yihui.name/knitr/</a>.</p>
-</div>
-<div id="ref-R-bookdown">
-<p>Xie, Yihui. 2020. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.</p>
 </div>
 </div>
             </section>

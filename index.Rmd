@@ -11,7 +11,6 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
-
 # 前言
 ## 安裝bookdown的動機
 bookdown兼具word寫作時的自然，與latex排版上的優美，但少了latex在排版上的繁瑣設定，此外bookdown的輸出格式也可自行設定，有word, pdf, html可做選擇。   
@@ -48,4 +47,3 @@ knitr::write_bib(c(
 ```
 
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].

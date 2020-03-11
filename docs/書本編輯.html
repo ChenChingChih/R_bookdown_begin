@@ -136,10 +136,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#預先安裝的套件"><i class="fa fa-check"></i><b>1.2</b> 預先安裝的套件</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html"><i class="fa fa-check"></i><b>2</b> 建立自己的電子書</a><ul>
-<li class="chapter" data-level="2.1" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#不可更改index.rmd"><i class="fa fa-check"></i><b>2.1</b> 不可更改<code class="unnumbered">index.Rmd</code></a></li>
+<li class="chapter" data-level="2.1" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#生成電子書範例"><i class="fa fa-check"></i><b>2.1</b> 生成電子書範例</a></li>
+<li class="chapter" data-level="2.2" data-path="建立自己的電子書.html"><a href="建立自己的電子書.html#注意事項"><i class="fa fa-check"></i><b>2.2</b> 注意事項</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="書本編輯.html"><a href="書本編輯.html"><i class="fa fa-check"></i><b>3</b> 書本編輯</a><ul>
-<li class="chapter" data-level="" data-path="書本編輯.html"><a href="書本編輯.html#markdown-語法syntax"><i class="fa fa-check"></i>Markdown 語法(syntax)</a></li>
+<li class="chapter" data-level="3.1" data-path="書本編輯.html"><a href="書本編輯.html#markdown-語法syntax"><i class="fa fa-check"></i><b>3.1</b> Markdown 語法(syntax)</a></li>
+<li class="chapter" data-level="3.2" data-path="書本編輯.html"><a href="書本編輯.html#參考文獻引注"><i class="fa fa-check"></i><b>3.2</b> 參考文獻引注</a><ul>
+<li class="chapter" data-level="" data-path="書本編輯.html"><a href="書本編輯.html#有趣的互動應用"><i class="fa fa-check"></i>有趣的互動應用</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="發布電子書至網路.html"><a href="發布電子書至網路.html"><i class="fa fa-check"></i><b>4</b> 發布電子書至網路</a><ul>
 <li class="chapter" data-level="" data-path="發布電子書至網路.html"><a href="發布電子書至網路.html#發佈到github上"><i class="fa fa-check"></i>發佈到GitHub上</a><ul>
@@ -150,8 +154,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="使用狀況追蹤.html"><a href="使用狀況追蹤.html"><i class="fa fa-check"></i><b>5</b> 使用狀況追蹤</a><ul>
 <li class="chapter" data-level="" data-path="使用狀況追蹤.html"><a href="使用狀況追蹤.html#了解你的影響力"><i class="fa fa-check"></i>了解你的影響力</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -176,14 +180,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 3</span> 書本編輯</h1>
 <p>跑出單一章節的方法:可以透過上方的Knit按鍵，或是用以下方法生成電子書(gitbook)</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">bookdown<span class="op">::</span><span class="kw">preview_chapter</span>(<span class="st">&quot;01-intro.rmd&quot;</span>, <span class="dt">output_format=</span><span class="st">&quot;bookdown::gitbook&quot;</span>)</a></code></pre></div>
-<div id="markdown-語法syntax" class="section level2 unnumbered">
-<h2>Markdown 語法(syntax)</h2>
-<p>詳見<a href="https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html#e59fbae69cace8aa9ee6b395">林茂廷老師上課講義</a>、
-<a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">markdown_cheatsheet</a>、或是<a href="https://bookdown.org/yihui/bookdown/markdown-syntax.html#inline-formatting">bookdown電子書範例</a>。</p>
+<div id="markdown-語法syntax" class="section level2">
+<h2><span class="header-section-number">3.1</span> Markdown 語法(syntax)</h2>
+<p>詳見<a href="https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html#e59fbae69cace8aa9ee6b395">林茂廷老師上課講義</a><span class="citation">(林茂廷 <a href="#ref-R_Markdown_介紹" role="doc-biblioref">2017</a>)</span>、
+<a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">markdown_cheatsheet</a>、或是<a href="https://bookdown.org/yihui/bookdown/markdown-syntax.html#inline-formatting">bookdown電子書範例</a><span class="citation">(Xie <a href="#ref-Authoring_Books" role="doc-biblioref">2019</a>)</span>。</p>
 <p>注意換行要在結束句輸入「兩」個空格，才換行。不然就要按兩次enter鍵。<br />
 一個空格只是單純的空格，「兩」個空格才會有新的意義，如換行或內縮（在列點時用）。<br />
-## 參考文獻引注
-建立.bib檔，範例程式中已有<code>book.bib</code>(圖書),<code>packages.bib</code>(R套件)，可以自行做增刪。<br />
+## 書本的排序
+最先讀取的檔案為<code>index.Rmd</code>(此為網頁讀取html檔的預設值)，再來以數字大小順序排列，範例中即以<code>01-intro.Rmd</code>,<code>02-literature.Rmd</code>…而以<code>_</code>開頭的檔案不會被編入電子書裡。</p>
+</div>
+<div id="參考文獻引注" class="section level2">
+<h2><span class="header-section-number">3.2</span> 參考文獻引注</h2>
+<p>建立.bib檔，範例程式中已有<code>book.bib</code>(圖書),<code>packages.bib</code>(R套件)，可以自行做增刪。<br />
 在index.Rmd</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="op">---</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb5-2" title="2">title<span class="op">:</span><span class="st"> &quot;A Minimal Book Example&quot;</span></a>
@@ -211,25 +219,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-7" title="7">  year =<span class="st"> </span>{<span class="dv">2016</span>}, <span class="co">#年分</span></a>
 <a class="sourceLine" id="cb6-8" title="8">  url =<span class="st"> </span>{https<span class="op">:</span><span class="er">//</span>www.R<span class="op">-</span>project.org<span class="op">/</span>}, <span class="co">#網址</span></a>
 <a class="sourceLine" id="cb6-9" title="9">}</a></code></pre></div>
-<p>這裡引用<span class="citation">(R Core Team <a href="#ref-R-base" role="doc-biblioref">2019</a>)</span>(<code>[@R-base]</code>)
-### 有趣的互動應用
-Shiny app example:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1">knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://yihui.shinyapps.io/miniUI/&quot;</span>, </a>
-<a class="sourceLine" id="cb7-2" title="2">  <span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</a></code></pre></div>
+<p>這裡引用<span class="citation">(R Core Team <a href="#ref-R-base" role="doc-biblioref">2019</a>)</span>(<code>[@R-base]</code>)<code>[@名稱(key)]</code><br />
+最後一個檔案(範例中為<code>06-references.Rmd</code>)，可僅用一行程式表達，</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="st">`</span><span class="dt">r if (knitr::is_html_output()) &#39;# References {-}&#39;</span><span class="st">`</span></a></code></pre></div>
+<div id="有趣的互動應用" class="section level3 unnumbered">
+<h3>有趣的互動應用</h3>
+<p>Shiny app example:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1">knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://yihui.shinyapps.io/miniUI/&quot;</span>, </a>
+<a class="sourceLine" id="cb8-2" title="2">  <span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</a></code></pre></div>
 <iframe src="https://yihui.shinyapps.io/miniUI/?showcase=0" width="672" height="600px">
 </iframe>
 <p>口罩地圖</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1">knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://mask.goodideas-studio.com/&quot;</span>, </a>
-<a class="sourceLine" id="cb8-2" title="2">  <span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1">knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://mask.goodideas-studio.com/&quot;</span>, </a>
+<a class="sourceLine" id="cb9-2" title="2">  <span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</a></code></pre></div>
 <iframe src="https://mask.goodideas-studio.com/?showcase=0" width="672" height="600px">
 </iframe>
 
+</div>
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-R-base">
 <p>R Core Team. 2019. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.</p>
+</div>
+<div id="ref-Authoring_Books">
+<p>Xie, Yihui. 2019. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://bookdown.org/yihui/bookdown/">https://bookdown.org/yihui/bookdown/</a>.</p>
+</div>
+<div id="ref-R_Markdown_介紹">
+<p>林茂廷. 2017. <em>R Markdown 介紹</em>. <a href="https://bookdown.org/tpemartin/rmarkdown_intro/#markdown">https://bookdown.org/tpemartin/rmarkdown_intro/#markdown</a>.</p>
 </div>
 </div>
             </section>
