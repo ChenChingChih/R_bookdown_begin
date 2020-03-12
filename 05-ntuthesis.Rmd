@@ -3,6 +3,10 @@
 [@NTU]
 感謝開發者[廖永賦](https://github.com/liao961120/ntuthesis)的用心!  
 
+[後續更新](https://github.com/liao961120/ntuthesis/issues/15)/
+[commit過程紀錄](https://github.com/ChenChingChih/thesis/commits/master)/
+[成品](https://chenchingchih.github.io/thesis/) 
+
 ## 安裝
 最新版
 ```{r eval=FALSE}
@@ -53,6 +57,4 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book")
 ## 發布至網路
 請參考[.nojekyl][發布電子書至網路]  
 
-[後續更新](https://github.com/liao961120/ntuthesis/issues/15)/
-[commit過程紀錄](https://github.com/ChenChingChih/thesis/commits/master)/
-[成品](https://chenchingchih.github.io/thesis/) 
+
