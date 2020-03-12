@@ -62,9 +62,4 @@ Shiny app example:
 knitr::include_app("https://yihui.shinyapps.io/miniUI/", 
   height = "600px")
 ```
-口罩地圖
-```{r include=TRUE}
-knitr::include_app("https://mask.goodideas-studio.com/", 
-  height = "600px")
-```
 
