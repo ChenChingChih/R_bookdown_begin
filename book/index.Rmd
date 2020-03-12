@@ -1,5 +1,5 @@
 --- 
-title: "R bookdown 新手村"
+title: "R bookdown 入門"
 author: "Chen, Ching-Chih"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
