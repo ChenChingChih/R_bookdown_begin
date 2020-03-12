@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 建立自己的電子書 | R bookdown 新手村</title>
+  <title>Chapter 6 NTU thesis bookdown模板 | R bookdown 新手村</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 建立自己的電子書 | R bookdown 新手村" />
+  <meta property="og:title" content="Chapter 6 NTU thesis bookdown模板 | R bookdown 新手村" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 建立自己的電子書 | R bookdown 新手村" />
+  <meta name="twitter:title" content="Chapter 6 NTU thesis bookdown模板 | R bookdown 新手村" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="書本編輯.html"/>
+<link rel="prev" href="使用狀況追蹤.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -195,26 +195,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="建立自己的電子書" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> 建立自己的電子書</h1>
-<div id="生成電子書範例" class="section level2">
-<h2><span class="header-section-number">2.1</span> 生成電子書範例</h2>
-<ol style="list-style-type: decimal">
-<li>先從github
-<strong>bookdown</strong> 套件可以從 <code>CRAN</code>上安裝:</li>
-</ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="co"># or the development version</span></a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></a></code></pre></div>
-<p>2.下載書的草稿<a href="https://github.com/rstudio/bookdown-demo">Github</a>/<a href="https://github.com/yihui/bookdown-chinese">中文模板</a>。<br />
-3.打開<code>bookdown-demo</code>資料夾，點選<code>bookdown-demo.Rproj</code>。<br />
-4.點開<code>index.Rmd</code> 再點選Rstudio右上角<code>Build</code>分頁裡面的 <code>Build Book</code>，便會看到書的草稿。</p>
+<div id="ntu-thesis-bookdown模板" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> NTU thesis bookdown模板</h1>
+<p><a href="https://yongfu.name/ntuthesis/doc/">臺大論文模板</a>
+<span class="citation">(廖永賦 <a href="#ref-NTU" role="doc-biblioref">2019</a>)</span></p>
+<div id="安裝" class="section level2">
+<h2><span class="header-section-number">6.1</span> 安裝</h2>
+<p>最新版</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" title="1"><span class="co">#install.packages(&#39;remotes&#39;)</span></a>
+<a class="sourceLine" id="cb13-2" title="2">remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;liao961120/ntuthesis&quot;</span>)</a></code></pre></div>
+<p>套件所需的字體檔</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" title="1"><span class="co">#install.packages(&#39;remotes&#39;)</span></a>
+<a class="sourceLine" id="cb14-2" title="2">remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;liao961120/ntuthesis&quot;</span>)</a></code></pre></div>
 </div>
-<div id="注意事項" class="section level2">
-<h2><span class="header-section-number">2.2</span> 注意事項</h2>
-<p>不可更改<code class="unnumbered">index.Rmd</code>
-因為後續生成的<code>index.html</code>是網頁讀取的首要項目!</p>
+<div id="匯入論文模板" class="section level2">
+<h2><span class="header-section-number">6.2</span> 匯入論文模板</h2>
+<p>打開<code>ntuthesis.Rproject</code>在 console 執行：</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1">ntuthesis<span class="op">::</span><span class="kw">import_template</span>(<span class="st">&quot;project_name&quot;</span>)</a></code></pre></div>
+<p>會出現<code>project_name</code>資料夾。<br />
+在<code>project_name</code>資料夾中開一個<code>R-project</code>檔，然後開啟該<code>R-project</code>檔。</p>
+<div id="編輯封面" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> 編輯封面</h3>
+<p>按照<a href="https://yongfu.name/ntuthesis/doc/export-thesis.html">原作者</a>指令操作，會安裝.tex需要用到的套件到tinytex中。</p>
+</div>
+<div id="compile-論文" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Compile 論文</h3>
+<p>將<code>01-install-compile.rmd</code>內的28~34行刪除，</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" title="1"><span class="cf">if</span> (knitr<span class="op">::</span><span class="kw">is_html_output</span>()) {</a>
+<a class="sourceLine" id="cb16-2" title="2">  knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;figs/rmd-template.gif&quot;</span>)</a>
+<a class="sourceLine" id="cb16-3" title="3">} <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb16-4" title="4">  knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;figs/rmd-template.png&quot;</span>)</a>
+<a class="sourceLine" id="cb16-5" title="5">}</a></code></pre></div>
+<p>調整_output.yml 5~6行，</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" title="1">  includes<span class="op">:</span></a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="co">#    in_header: latex/custom.js</span></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="co">#    after_body: disqus.html</span></a></code></pre></div>
+<p>再點選build book即可生成gitbook和pdf檔。</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" title="1">bookdown<span class="op">::</span><span class="kw">render_book</span>(<span class="st">&quot;index.Rmd&quot;</span>, <span class="st">&quot;bookdown::gitbook&quot;</span>)</a>
+<a class="sourceLine" id="cb18-2" title="2">bookdown<span class="op">::</span><span class="kw">render_book</span>(<span class="st">&quot;index.Rmd&quot;</span>, <span class="st">&quot;bookdown::pdf_book&quot;</span>)</a></code></pre></div>
+</div>
+</div>
+<div id="發布至網路" class="section level2">
+<h2><span class="header-section-number">6.3</span> 發布至網路</h2>
+<p>請參考<a href="發布電子書至網路.html#發布電子書至網路">.nojekyl</a></p>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-NTU">
+<p>廖永賦. 2019. <em>NTU Thesis</em>. <a href="https://yongfu.name/ntuthesis/doc/">https://yongfu.name/ntuthesis/doc/</a>.</p>
 </div>
 </div>
             </section>
@@ -222,8 +252,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="書本編輯.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="使用狀況追蹤.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -254,7 +284,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-ntuthesis.Rmd",
 "text": "Edit"
 },
 "history": {

@@ -1,0 +1,53 @@
+# NTU thesis bookdown模板
+[臺大論文模板](https://yongfu.name/ntuthesis/doc/)
+[@NTU]
+
+## 安裝
+最新版
+```{r eval=FALSE}
+#install.packages('remotes')
+remotes::install_github("liao961120/ntuthesis")
+```
+套件所需的字體檔
+```{r eval=FALSE}
+#install.packages('remotes')
+remotes::install_github("liao961120/ntuthesis")
+```
+
+## 匯入論文模板
+打開`ntuthesis.Rproject`在 console 執行：
+```{r eval=FALSE}
+ntuthesis::import_template("project_name")
+```
+會出現`project_name`資料夾。  
+在`project_name`資料夾中開一個`R-project`檔，然後開啟該`R-project`檔。
+
+###  編輯封面
+按照[原作者](https://yongfu.name/ntuthesis/doc/export-thesis.html)指令操作，會安裝.tex需要用到的套件到tinytex中。  
+
+### Compile 論文
+將`01-install-compile.rmd`內的28~34行刪除，
+```{r eval=FALSE}
+if (knitr::is_html_output()) {
+  knitr::include_graphics("figs/rmd-template.gif")
+} else {
+  knitr::include_graphics("figs/rmd-template.png")
+}
+
+```
+
+調整_output.yml 5~6行，
+```{r eval=FALSE}
+  includes:
+#    in_header: latex/custom.js
+#    after_body: disqus.html
+
+```
+再點選build book即可生成gitbook和pdf檔。
+```{r eval=FALSE}
+bookdown::render_book("index.Rmd", "bookdown::gitbook")
+bookdown::render_book("index.Rmd", "bookdown::pdf_book")
+```
+
+## 發布至網路
+請參考[.nojekyl][發布電子書至網路]
