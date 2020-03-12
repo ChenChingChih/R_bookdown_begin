@@ -54,5 +54,6 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book")
 請參考[.nojekyl][發布電子書至網路]  
 
 [後續更新](https://github.com/liao961120/ntuthesis/issues/15)/
+
 [commit過程紀錄](https://github.com/ChenChingChih/thesis/commits/master)/
 [成品](https://chenchingchih.github.io/thesis/) 
