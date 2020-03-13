@@ -15,6 +15,13 @@ bookdown::preview_chapter("01-intro.rmd", output_format="bookdown::gitbook")
 ## 書本的排序
 最先讀取的檔案為`index.Rmd`(此為網頁讀取html檔的預設值)，再來以數字大小順序排列，範例中即以`01-intro.Rmd`,`02-literature.Rmd`...而以`_`開頭的檔案不會被編入電子書裡。  
 
+## 書本輸出  
+在`_bookdown.yml`中將`output_dir`改成`docs`
+```{r eval=FALSE}
+output_dir: "docs"
+```
+
+
 ## 參考文獻引注
 建立`.bib`檔，範例程式中已有`book.bib`(圖書),`packages.bib`(R套件)，可以自行做增刪。  
 在`index.Rmd`
@@ -62,9 +69,9 @@ Shiny app example:
 knitr::include_app("https://yihui.shinyapps.io/miniUI/", 
   height = "600px")
 ```
-口罩地圖
+COVID-19
 ```{r include=TRUE}
-knitr::include_app("https://mask.goodideas-studio.com/", 
+knitr::include_app("https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", 
   height = "600px")
 ```
 
